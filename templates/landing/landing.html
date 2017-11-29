@@ -15,49 +15,22 @@
 
 </head>
 <body>
-    <p>Hello world</p>
-    <p>Мадмазел!</p>
-    <p class="title ">Привет {{ name }}</p>
-    <spam>To day {{ corrent_day }}</spam>
 
-    <h1 class="title"> Hello world!</h1>
-
-    <div class="container">
-    <!-- Content here -->
-    {{ corrent_day }}
-    </div>
-
-
-    <div class="container-fluid">
-    {{ corrent_day }}
-    </div>
-
-    <div class="container">
-        <div class="row">
-            <div class="col-sm">
-                One of three columns
-            </div>
-            <div class="col-sm">
-            One of three columns
-            </div>
-            <div class="col-sm">
-            One of three columns
-            </div>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+            <h1 class="title">Наш магазин скоро открывается</h1>
+            <h1 class="title">Оставляйте Ваш имейл в формате ниже</h1>
+                <form action="" method="post">
+                    {% csrf_token %}
+                    {{ form.as_p }}
+                    <div>
+                        <button type="submit" class="btn btn-primary">Отправить</button>
+                    </div>
+                </form>
         </div>
     </div>
-
-
-    <button type="button" class="btn btn-primary">Primary</button>
-    <button type="button" class="btn btn-secondary">Secondary</button>
-    <button type="button" class="btn btn-success">Success</button>
-    <button type="button" class="btn btn-danger">Danger</button>
-    <button type="button" class="btn btn-warning">Warning</button>
-    <button type="button" class="btn btn-info">Info</button>
-    <button type="button" class="btn btn-light">Light</button>
-    <button type="button" class="btn btn-dark">Dark</button>
-
-    <button type="button" class="btn btn-link">Link</button>
-
+</div>
 
 
 
