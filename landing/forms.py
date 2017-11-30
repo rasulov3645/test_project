@@ -4,7 +4,7 @@ from .models import *
 class SubcriberForm(forms.ModelForm):
 
     class Meta:
-        model = Subcribers
+        model = Subcriber
 
         # Поля которые необходими ключить
         #fields = []
