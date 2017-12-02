@@ -11,7 +11,7 @@ class Status(models.Model):
     updated = models.DateTimeField(auto_now_add=False, auto_now=True)
 
     def __str__(self):
-        return "Статус %s" % self.id
+        return "Статус %s" % self.name
 
     class Meta:
         verbose_name = 'Статус заказа'
